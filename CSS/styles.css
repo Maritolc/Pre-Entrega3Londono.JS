@@ -37,6 +37,11 @@ a {
 
 
 /*INDEX CSS */
+img{
+    width: 400px;
+    height: 250px;
+}
+
 .wrapper {
     display: grid;
     grid-template-columns: 1fr 4fr;
@@ -120,6 +125,17 @@ aside {
 
 .boton-carrito {
     margin-top: 2rem;
+}
+
+.numero{
+    background-color: var(--clr-white);
+    color: var(--clr-main);
+    padding: .15rem .25rem;
+    border-radius: .25rem;
+}
+.boton-carrito.active .numero {
+    background-color: var(--clr-main);
+    color: var(--clr-white);
 }
 
 .texto-footer {
@@ -265,7 +281,7 @@ main {
     gap: 1rem;
     
 }
- 
+
 
 .carrito-acciones-comprar {
     border: 0;
@@ -278,4 +294,9 @@ main {
     border-bottom-right-radius: 1rem;
 
 }
+
+.disabled {
+    display: none;
+}
+
 
