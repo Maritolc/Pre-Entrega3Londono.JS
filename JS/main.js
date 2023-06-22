@@ -210,6 +210,8 @@ const productos = [
 
 const contenedorProductos = document.querySelector("#contenedor-productos");
 
+const botonesCategorias = document.querySelector("#camperas","#buzos","#pantalones","#calzados");
+
 function cargarProductos(){
 
     productos.forEach(producto=>{
@@ -230,5 +232,12 @@ function cargarProductos(){
 }
 
 cargarProductos();
+/*PROBLEMA CON BOTON-CATEGORIA 1:12:19*/
+botonesCategorias.forEach(boton => {
+    boton.addEventListener("Click", (e) => {
+        
+        e.currentTarget.classList.add("active");
+    })
+})
 
 
